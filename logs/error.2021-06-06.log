@@ -1,0 +1,18 @@
+[2021-06-06 15:02:59] api[].ERROR: Directus\Exception\NotInstalledException: This Directus instance has not been configured. Install via the Directus App (eg: /admin) or read more about configuration at: https://docs.directus.io/getting-started/installation.html#configure in C:\xampp\htdocs\directus.git\src\endpoints\Server.php:46
+Stack trace:
+#0 [internal function]: Directus\Api\Routes\Server->projects
+#1 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#2 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#3 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#4 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#5 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#6 C:\xampp\htdocs\directus.git\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#8 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#11 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#12 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#13 C:\xampp\htdocs\directus.git\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#14 C:\xampp\htdocs\directus.git\src\core\Directus\Application\Application.php(161): Slim\App->run
+#15 C:\xampp\htdocs\directus.git\index.php(5): Directus\Application\Application->run [] []
